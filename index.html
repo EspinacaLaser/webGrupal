@@ -61,12 +61,145 @@
     </header>
 
     <main>
-        <h1>aquí va todo el contenido de la pagina</h1>
+        
+        <section class="container mt-5">
+
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="First slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="1"
+                        aria-label="Second slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="2"
+                        aria-label="Third slide"
+                    ></li>
+
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="3"
+                        aria-label="Fourth slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="4"
+                        aria-label="Fifth slide"
+                    ></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img
+                            src="carrusel/anfibios1.png"
+                            class="w-100 d-block"
+                            alt="First slide"
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img
+                            src="carrusel/aves1.png"
+                            class="w-100 d-block"
+                            alt="Second slide"
+                        />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img
+                            src="carrusel/mamiferos1.png"
+                            class="w-100 d-block"
+                            alt="Third slide"
+                        />
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img
+                            src="carrusel/peces1.png"
+                            class="w-100 d-block"
+                            alt="Fourth slide"
+                        />
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                            src="carrusel/reptiles1.png"
+                            class="w-100 d-block"
+                            alt="Fifth slide"
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+
+
+
+
+        </section>
+
+        <section class="mt-2 mb-5">
+
+            <h1 class="text-center">Catálogo de animales</h1>
+            <h2 class="text-center">Los otros animales de la tierra</h2>
+
+            <div class="container mt-4">
+
+                <div class="row justify-content-between">
+
+                    <div class="col-2">
+                        <img src="categorias/anfibios.jpeg" alt="categoriaAnfibios" width="170" style="border-radius: 20%;">
+                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Anfibios</a></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="categorias/aves.jpeg" alt="categoriaAves" width="170" style="border-radius: 50%;">
+                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Aves</a></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="categorias/maniferos.jpeg" alt="categoriaMamiferos" width="170" style="border-radius: 50%;">
+                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Mamíferos</a></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="categorias/peces.jpeg" alt="categoriaPeces" width="170" style="border-radius: 50%;">
+                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Peces</a></button>
+                    </div>
+                    <div class="col-2">
+                        <img src="categorias/reptiles.jpeg" alt="categoriaReptiles" width="170" style="border-radius: 50%;">
+                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Reptiles</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
     </main>
-
-
-
-
 
     <footer class="container-fluid" style="background-color:rgb(108, 117, 126);">
 
@@ -89,37 +222,21 @@
                     <h5>Centros participantes</h5>
                     <nav>
                         <ul>
-                            <li class="list-group-numbered"><a href="http://www.ies-azarquiel.es/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Azarquiel</a></li>
+                            <li class="list-group-numbered"><a href="http://www.ies-azarquiel.es/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Azarquiel</a></li>
 
-                            <li class="list-group-numbered"><a href="http://www.iesjuanbosco.es/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Juan Bosco</a></li>
+                            <li class="list-group-numbered"><a href="http://www.iesjuanbosco.es/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Juan Bosco</a></li>
 
-                            <li class="list-group-numbered"><a href="http://iesmaestredecalatrava.es/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Maestre de Calatrava</a></li>
+                            <li class="list-group-numbered"><a href="http://iesmaestredecalatrava.es/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Maestre de Calatrava</a></li>
 
-                            <li class="list-group-numbered"><a href="https://cifpvirgendegracia.com/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Virgen de Gracia</a></li>
+                            <li class="list-group-numbered"><a href="https://cifpvirgendegracia.com/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Virgen de Gracia</a></li>
 
-                            <li class="list-group-numbered"><a href="http://www.iesgregorioprieto.com/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Gregorio Prieto</a></li>
+                            <li class="list-group-numbered"><a href="http://www.iesgregorioprieto.com/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Gregorio Prieto</a></li>
 
-                            <li class="list-group-numbered"><a href="https://www.iespedromercedes.es/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Pedro Mercedes</a></li>
+                            <li class="list-group-numbered"><a href="https://www.iespedromercedes.es/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Pedro Mercedes</a></li>
 
-                            <li class="list-group-numbered"><a href="http://briandademendoza.es/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Brianda de Mendoza</a></li>
+                            <li class="list-group-numbered"><a href="http://briandademendoza.es/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Brianda de Mendoza</a></li>
 
-                            <li class="list-group-numbered"><a href="http://riberadeltajo.es/nuevaweb/"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S
-                                    Ribera del Tajo</a></li>
+                            <li class="list-group-numbered"><a href="http://riberadeltajo.es/nuevaweb/" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">I.E.S Ribera del Tajo</a></li>
 
                         </ul>
                     </nav>
@@ -135,15 +252,9 @@
 
                     <nav>
                         <ul>
-                            <li class="list-group-numbered"><a href="#"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Quiénes
-                                    somos</a></li>
-                            <li class="list-group-numbered"><a href="#"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Privacidad</a>
-                            </li>
-                            <li class="list-group-numbered"><a href="#"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Contacto</a>
-                            </li>
+                            <li class="list-group-numbered"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Quiénes somos</a></li>
+                            <li class="list-group-numbered"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Privacidad</a></li>
+                            <li class="list-group-numbered"><a href="#" class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Contacto</a></li>
 
                         </ul>
                     </nav>
