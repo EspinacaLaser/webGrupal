@@ -8,17 +8,16 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
 
+        <a name="top"></a>
         <nav class="navbar navbar-expand-sm" style="background-color: rgb(229, 250, 233);">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="logos/logo.png" alt="logoCaracol" class="img-fluid"
-                        width="100"></a>
+                <a class="navbar-brand" href="#"><img src="logos/logo.png" alt="logoCaracol" class="img-fluid"
+                        width="70"></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,18 +38,19 @@
                                 <a class="dropdown-item" href="#">Mamíferos</a>
                                 <a class="dropdown-item" href="#">Peces</a>
 
-                                <a class="dropdown-item" href="#">Reptiles</a>
+                                <a class="dropdown-item" href="reptiles.html">Reptiles</a>
 
 
                             </div>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="registroUsuario">Regístrate</a>
+                            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modalId">Regístrate</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="inicioSesion">Inicia sesión</a>
+                            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#modalIdInicia">Inicia
+                                sesión</a>
                         </li>
 
                     </ul>
@@ -65,7 +65,7 @@
         <section class="container mt-5">
 
             <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators list-unstyled">
                     <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
                         aria-label="First slide"></li>
                     <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
@@ -111,39 +111,40 @@
 
         <section class="mt-2 mb-5">
 
-            <h1 class="text-center">Catálogo de animales</h1>
-            <h2 class="text-center">Los otros animales de la tierra</h2>
+            <h1 class="text-center mb-3">Catálogo de animales</h1>
+            <h2 class="text-center mb-3">Los otros animales de la tierra</h2>
 
-            <div class="container mt-4">
+            <div class="container mt-5 mb-5">
 
-                <div class="row justify-content-between">
+                <div class="row justify-content-center">
 
-                    <div class="col-2">
-                        <img src="categorias/anfibios.jpeg" alt="categoriaAnfibios" width="170"
-                            style="border-radius: 20%;">
+                    <div class="mb-2 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="categorias/anfibios.jpeg" alt="categoriaAnfibios" width="100%"
+                            style="border-radius: 50%;">
                         <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
                                 class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Anfibios</a></button>
                     </div>
-                    <div class="col-2">
-                        <img src="categorias/aves.jpeg" alt="categoriaAves" width="170" style="border-radius: 50%;">
+                    <div class="mb-2 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="categorias/aves.jpeg" alt="categoriaAves" width="100%" style="border-radius: 50%;">
                         <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
                                 class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Aves</a></button>
                     </div>
-                    <div class="col-2">
-                        <img src="categorias/maniferos.jpeg" alt="categoriaMamiferos" width="170"
+                    <div class="mb-2 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="categorias/maniferos.jpeg" alt="categoriaMamiferos" width="100%"
                             style="border-radius: 50%;">
                         <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
                                 class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Mamíferos</a></button>
                     </div>
-                    <div class="col-2">
-                        <img src="categorias/peces.jpeg" alt="categoriaPeces" width="170" style="border-radius: 50%;">
+                    <div class="mb-2 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="categorias/peces.jpeg" alt="categoriaPeces" width="100%" style="border-radius: 50%;">
                         <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
                                 class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Peces</a></button>
                     </div>
-                    <div class="col-2">
-                        <img src="categorias/reptiles.jpeg" alt="categoriaReptiles" width="170"
+                    <div class="mb-2 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="categorias/reptiles.jpeg" alt="categoriaReptiles" width="100%"
                             style="border-radius: 50%;">
-                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                        <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a
+                                href="reptiles.html"
                                 class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Reptiles</a></button>
                     </div>
                 </div>
@@ -163,7 +164,7 @@
 
                 <div class="col-2">
 
-                    <button class="btn" style="background-color: rgb(39, 168, 69);"><a href="#"
+                    <button class="btn" style="background-color: rgb(39, 168, 69);"><a href="#top"
                             class="link-offset-2 link-underline link-underline-opacity-0 link-light">SUBIR</a></button>
 
 
@@ -220,14 +221,16 @@
 
                     <nav>
                         <ul>
-                            <li class="list-group-numbered"><a href="quienes_somos.html" id="quienesSomos"
+                            <li class="list-group-numbered"><a href="quienes_somos.html"
                                     class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Quiénes
                                     somos</a></li>
-                            <li class="list-group-numbered"><a href="#" id="politicaPrivacidad"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Privacidad</a>
+                            <li class="list-group-numbered"><a href="#"
+                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold"
+                                    data-bs-toggle="modal" data-bs-target="#modalPoliticaPrivacidad">Privacidad</a>
                             </li>
-                            <li class="list-group-numbered"><a href="#" id="contacto"
-                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Contacto</a>
+                            <li class="list-group-numbered"><a href=""
+                                    class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold"
+                                    data-bs-toggle="modal" data-bs-target="#modalIdContacta">Contacto</a>
                             </li>
 
                         </ul>
@@ -238,7 +241,7 @@
 
                 <div class="col-2">
 
-                    <button class="btn" style="background-color: rgb(39, 168, 69);"><a href="#"
+                    <button class="btn" style="background-color: rgb(39, 168, 69);"><a href="index.html"
                             class="link-offset-2 link-underline link-underline-opacity-0 link-light">HOME</a></button>
 
 
@@ -246,13 +249,150 @@
 
             </div>
 
-            <h5 class="text-center">Catálogo de animales © S1DAM - S1DAW</h5>
+            <h5 class="text-center m-0">Catálogo de animales © S1DAM - S1DAW</h5>
 
         </div>
-
-
-
     </footer>
+
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="modalId">
+                        Registro de Usuario
+                    </h5>
+                </div>
+                <div class="modal-body">
+
+                    <form action="" method="post" class="mx-2 px-2 bg-white">
+
+                        <div class="mb-3">
+                            <label for="user" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="" id="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Repite la contraseña</label>
+                            <input type="password" class="form-control" name="" id="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Email</label>
+                            <input type="email" class="form-control" name="" id="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" name="" id="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" name="" id="">
+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Entrar</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalIdInicia" tabindex="-1" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="modalTitleId">
+                        INICIA SESIÓN
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="" method="post" class="mx-2 px-2 bg-white">
+
+                        <div class="mb-3">
+                            <label for="user" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="" id="">
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Entrar</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="modalIdContacta" tabindex="-1" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center w-100" id="modalId">
+                        Escribe un comentario para contactar
+                    </h5>
+                </div>
+                <div class="modal-body">
+
+                    <form action="" method="post" class="mx-2 px-2 bg-white">
+
+                        <div class="mb-3">
+                            <label for="user" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Tu email</label>
+                            <input type="email" class="form-control" name="" id="">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Tu comentario</label>
+                            <textarea name="" id="" class="form-control" style="height: 100px;"></textarea>
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn mt-3 w-100" style="background-color: rgb(39, 168, 68);"><a href="#"
+                            class="link-offset-2 link-underline link-underline-opacity-0 link-light fw-bold">Entrar</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="modalPoliticaPrivacidad" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
         aria-hidden="true">
@@ -380,213 +520,14 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Optional: Place to the bottom of scripts -->
     <script>
-        $(document).ready(function () {
-            $("#politicaPrivacidad").click(function () {
-                $("#modalPoliticaPrivacidad").modal('show');
-            });
-        });
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
     </script>
-
-
-
-
-
-
-
-
-
-
-    <div class="modal fade" id="modalRegistroUsuario" tabindex="-1" role="dialog"
-        aria-labelledby="modalRegistroUsuarioLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h2 class="modal-title" id="modalRegistroUsuarioLabel">REGISTRO DE USUARIO</h2>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group pb-3">
-                            <label for="usuario">Usuario</label>
-                            <input type="text" class="form-control" id="usuario">
-                        </div>
-                        <div class="form-group pb-3">
-                            <label for="contraseña">Contraseña</label>
-                            <input type="password" class="form-control" id="contraseña">
-                        </div>
-                        <div class="form-group pb-3">
-                            <label for="contraseña">Repite la contraseña</label>
-                            <input type="password" class="form-control" id="repitecontraseña">
-                        </div>
-                        <div class="form-group pb-3">
-                            <label for="contraseña">Email</label>
-                            <input type="password" class="form-control" id="email">
-                        </div>
-                        <div class="form-group pb-3">
-                            <label for="contraseña">Dirección</label>
-                            <input type="password" class="form-control" id="direccion">
-                        </div>
-                        <div class="form-group pb-3">
-                            <label for="contraseña">Teléfono</label>
-                            <input type="password" class="form-control" id="telefono">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button type="button" class="btn btn-success btn-block" style="background-color: rgb(39, 168, 69)";>Entrar</button>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#registroUsuario").click(function () {
-                $("#modalRegistroUsuario").modal('show');
-            });
-        });
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="modal fade" id="modalInicioSesion" tabindex="-1" role="dialog" aria-labelledby="modalInicioSesion" aria-hidden="true">
-<div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-        <div class="modal-header text-center">
-            <h2 class="modal-title" id="modalInicioSesionLabel">INICIO SESION</h2>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-group pb-3">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" class="form-control" id="usuario">
-                </div>
-                <div class="form-group pb-3">
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" class="form-control" id="contraseña">
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-success btn-block" style="background-color: rgb(39, 168, 69)";>Entrar</button>
-          </div>
-    </div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function () {
-    $("#inicioSesion").click(function () {
-        $("#modalInicioSesion").modal('show');
-    });
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
-aria-hidden="true">
-<div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-        <div class="modal-header text-center">
-            <h2 class="modal-title" id="modalInicioSesionLabel">CONTACTO</h2>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-group pb-3">
-                    <label for="usuario">Nombre</label>
-                    <input type="text" class="form-control" id="usuario">
-                </div>
-                <div class="form-group pb-3">
-                    <label for="contraseña">Tu email</label>
-                    <input type="password" class="form-control" id="contraseña">
-                </div>
-                <div class="form-group pb-3">
-                    <label for="contraseña">Tu comentario</label>
-                    <textarea name="areatexto" id="" cols="100" rows="5"></textarea>
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-success btn-block" style="background-color: rgb(39, 168, 69)";>Entrar</button>
-          </div>
-    </div>
-</div>
-</div>
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function () {
-    $("#contacto").click(function () {
-        $("#modalContacto").modal('show');
-    });
-});
-</script>
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
